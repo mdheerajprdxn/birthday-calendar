@@ -103,11 +103,19 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+body {
+  background-color: #EAF0F2;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
 
-
+h1{
+  font-size: 30px;
+  text-align: center;
+}
 
 
 
@@ -120,7 +128,32 @@ li {
   main styling starts here
 =================================*/
 
+/* Calendar */
 
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar li {
+  flex-basis: 200px;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calendar li h3{
+  padding: 10px;
+  background-color: #AB9EEE;
+  color: #fff;
+  text-align: end;
+  text-transform: uppercase;
+
+}
+
+.birthdays {
+  background-color: #fff;
+}
 
 
 
