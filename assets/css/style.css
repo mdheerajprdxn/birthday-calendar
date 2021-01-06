@@ -105,6 +105,7 @@ li {
 }
 
 body {
+  padding: 50px 0;
   background-color: #EAF0F2;
 }
 
@@ -119,9 +120,6 @@ h1{
   text-align: center;
 }
 
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -132,30 +130,119 @@ h1{
 
 /* Calendar */
 
-.calendar ul {
+.calendar .wrapper > ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.calendar li {
+.calendar .wrapper > ul > li {
   flex-basis: 200px;
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
+  font-weight: 600;
 }
 
 .calendar li h3{
   padding: 10px;
   background-color: #AB9EEE;
-  color: #fff;
+  color: #dfdcf3;
   text-align: end;
   text-transform: uppercase;
-
 }
 
+/* Birthday */
 .birthdays {
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px;
+  /* align-items: baseline; */
+  /* justify-content: center; */
 }
+
+.birthdays li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.empty {
+  background-color: #ccc;
+  font-family: 'FontAwesome';
+}
+
+
+.empty::before {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  content: "\f119 ";
+  font-size: 50px;
+}
+
+.big {
+  flex-basis: 100%;
+}
+
+.medium {
+  flex-basis: 50%;
+  height: 100px;
+}
+
+.small {
+  flex-basis: 33%;
+  /* height: 50px; */
+}
+
+.birthdays li:nth-child(1) {
+  color: #fff;
+  background-color: #555D7B;
+}
+
+.birthdays li:nth-child(2) {
+  color: #fff;
+  background-color: #9FD400;
+}
+
+.birthdays li:nth-child(3) {
+  color: #fff;
+  background-color: #C97D99;
+}
+
+.birthdays li:nth-child(4) {
+  color: #fff;
+  background-color: #79CAE5;
+}
+
+.birthdays li:nth-child(5) {
+  color: #fff;
+  background-color: #E8492A;
+}
+
+.birthdays li:nth-child(6) {
+  color: #fff;
+  background-color: #0055D0;
+}
+
+.birthdays li:nth-child(7) {
+  color: #fff;
+  background-color: #FF1BAA;
+}
+
+.birthdays li:nth-child(8) {
+  color: #fff;
+  background-color: #555D7B;
+}
+
+.birthdays li:nth-child(9) {
+  color: #fff;
+  background-color: #0DCCFE;
+}
+
 
 /* Form */
 
@@ -204,6 +291,7 @@ textarea:focus {
   background-color: #0186ef;
   color: #fff;
 }
+
 
 /*=================================
   main styling ends here
