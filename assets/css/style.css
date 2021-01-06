@@ -113,6 +113,8 @@ body {
 =================================*/
 
 h1{
+  margin: 40px 0;
+  color: #555;
   font-size: 30px;
   text-align: center;
 }
@@ -155,10 +157,53 @@ h1{
   background-color: #fff;
 }
 
+/* Form */
+
+form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+}
+.form-element {
+  flex-basis: 45%;
+}
+
+.form-element input {
+  border: 1px solid #ccc;
+  display: block;
+  margin: 10px 0;
+}
+
+.form-element input[type='number'] { 
+  padding: 10px;
+}
 
 
+.form-element input[type='number']:focus {
+  outline: none;
+}
 
-
+.form-element input[type='submit'] {
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #0186ef;
+  color: #fff;
+}
 
 /*=================================
   main styling ends here
