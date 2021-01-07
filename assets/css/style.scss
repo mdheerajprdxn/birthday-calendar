@@ -6,6 +6,7 @@ body {
 /*=================================
   Header styling starts here
 =================================*/
+
 h1 {
   margin: 40px 0;
   color: #555;
@@ -16,21 +17,20 @@ h1 {
 /*=================================
   Header styling ends here
 =================================*/
+
 /*=================================
   main styling starts here
 =================================*/
+
 /* Calendar */
+
 .calendar .wrapper > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .calendar .wrapper > ul > li {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+  flex-basis: 200px;
   margin: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -48,24 +48,15 @@ h1 {
 /* Birthday */
 .birthdays {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   min-height: 200px;
 }
 
 .birthdays li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
 }
 
@@ -75,35 +66,26 @@ h1 {
 }
 
 .empty::before {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #777;
   content: "\f119 ";
   font-size: 50px;
 }
 
 .big {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .medium {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
   height: 100px;
 }
 
 .small {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  flex-basis: 33%;
   /* height: 50px; */
 }
 
@@ -153,14 +135,11 @@ h1 {
 }
 
 /* Form */
+
 form {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   color: #555;
   font-size: 20px;
 }
@@ -169,17 +148,14 @@ textarea {
   width: 100%;
   border: 1px solid #ccc;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 textarea:focus {
   outline: none;
 }
-
 .form-element {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-basis: 45%;
 }
 
 .form-element input {
@@ -208,12 +184,16 @@ textarea:focus {
 /*=================================
   main styling ends here
 =================================*/
+
 /*=================================
   footer styling starts here
 =================================*/
+
 /*=================================
   footer styling ends here
 =================================*/
+
 /*media query starts*/
 /*media query for 995px starts here*/
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 995px) {
+}
