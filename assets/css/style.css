@@ -105,50 +105,50 @@ h1 {
 .small {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
-  /* height: 50px; */
+  height: 50px;
 }
 
-.birthdays li:nth-child(1) {
+.birthdays li:nth-child(1n + 1) {
   color: #fff;
   background-color: #555d7b;
 }
 
-.birthdays li:nth-child(2) {
+.birthdays li:nth-child(2n + 2) {
   color: #fff;
   background-color: #9fd400;
 }
 
-.birthdays li:nth-child(3) {
+.birthdays li:nth-child(3n + 3) {
   color: #fff;
   background-color: #c97d99;
 }
 
-.birthdays li:nth-child(4) {
+.birthdays li:nth-child(4n + 4) {
   color: #fff;
   background-color: #79cae5;
 }
 
-.birthdays li:nth-child(5) {
+.birthdays li:nth-child(5n + 5) {
   color: #fff;
   background-color: #e8492a;
 }
 
-.birthdays li:nth-child(6) {
+.birthdays li:nth-child(6n + 6) {
   color: #fff;
   background-color: #0055d0;
 }
 
-.birthdays li:nth-child(7) {
+.birthdays li:nth-child(7n + 7) {
   color: #fff;
   background-color: #ff1baa;
 }
 
-.birthdays li:nth-child(8) {
+.birthdays li:nth-child(8n + 8) {
   color: #fff;
   background-color: #555d7b;
 }
 
-.birthdays li:nth-child(9) {
+.birthdays li:nth-child(9n + 9) {
   color: #fff;
   background-color: #0dccfe;
 }
