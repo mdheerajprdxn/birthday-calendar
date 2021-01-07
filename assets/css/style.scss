@@ -32,8 +32,8 @@ h1 {
 .calendar .wrapper > ul > li {
   flex-basis: 200px;
   margin: 10px;
-  border-radius: 5px;
-  overflow: hidden;
+  //   border-radius: 5px;
+  //   overflow: hidden;
   font-weight: 600;
 }
 
@@ -43,6 +43,8 @@ h1 {
   color: #dfdcf3;
   text-align: end;
   text-transform: uppercase;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 /* Birthday */
@@ -51,6 +53,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   min-height: 200px;
+  border: 2px solid #ccc;
+  border-top: none;
 }
 
 .birthdays li {
@@ -61,18 +65,26 @@ h1 {
 }
 
 .empty {
-  background-color: #ccc;
-  font-family: "FontAwesome";
+  //   background-color: #ccc;
+  background-color: (rgba(0, 0, 0, 0.1));
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  position: relative;
 }
 
 .empty::before {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  color: #777;
-  content: "\f119 ";
-  font-size: 50px;
+  content: " ";
+  background-image: url("../images/empty.svg");
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  //   color: #777;
 }
 
 .big {
