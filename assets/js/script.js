@@ -13,7 +13,7 @@ window.onload = function () {
     let year = document.querySelector("#year").value;
     birthdays = JSON.parse(birthdaysText.value.toString());
     birthdayList.forEach((item) => {
-      // item.innerHTML = "";
+      item.innerHTML = "";
     });
 
     birthdays.map((item) => {
@@ -29,7 +29,8 @@ window.onload = function () {
 
       // Create new Li to append to the UL
       let newLi = document.createElement("li");
-      newLi.innerHTML = `${acronym}`;
+
+      newLi.innerHTML = ` <span class='name'> ${acronym} </span>`;
       birthdayList[day].append(newLi);
     });
     findLength();
