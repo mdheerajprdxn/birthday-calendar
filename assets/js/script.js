@@ -13,7 +13,7 @@ window.onload = function () {
     let year = document.querySelector("#year").value;
     birthdays = JSON.parse(birthdaysText.value.toString());
     birthdayList.forEach((item) => {
-      item.innerHTML = "";
+      // item.innerHTML = "";
     });
 
     birthdays.map((item) => {
