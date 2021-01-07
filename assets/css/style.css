@@ -29,8 +29,8 @@ h1 {
 
 .calendar .wrapper > ul > li {
   margin: 5px;
-  -ms-flex-preferred-size: 14%;
-      flex-basis: 14%;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   font-weight: 600;
 }
 
@@ -46,13 +46,15 @@ h1 {
 
 /* Birthday */
 .birthdays {
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-top: none;
   min-height: 200px;
   display: block;
   background-color: #fff;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .birthdays li {
