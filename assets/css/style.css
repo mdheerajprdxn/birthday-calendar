@@ -189,9 +189,6 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   color: #555;
   font-size: 20px;
 }
@@ -208,9 +205,20 @@ textarea:focus {
   outline: none;
 }
 
-.form-element {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4285f4;
+}
+
+.form-element:first-child {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  margin-right: 50px;
 }
 
 .form-element input {
@@ -220,7 +228,8 @@ textarea:focus {
 }
 
 .form-element input[type="number"] {
-  padding: 10px;
+  padding: 10px 100px 10px 15px;
+  font-size: 20px;
 }
 
 .form-element input[type="number"]:focus {
@@ -228,12 +237,15 @@ textarea:focus {
 }
 
 .form-element input[type="submit"] {
-  padding: 10px 20px;
+  padding: 15px 30px;
   margin: 20px 0;
   border: none;
   border-radius: 5px;
   background-color: #0186ef;
-  color: #fff;
+  color: #eee;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*=================================
