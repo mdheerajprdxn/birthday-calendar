@@ -5,3 +5,5 @@ export let calcButton = document.querySelector("input[type=submit]");
 export let year = document.querySelector("#year").value;
 
 export let birthdayList = document.querySelectorAll(".birthdays");
+
+export let errorMsg = document.querySelector(".error");

@@ -1,5 +1,10 @@
 import { data } from "./data.js";
-import { birthdaysText, calcButton, birthdayList } from "./elements.js";
+import {
+  birthdaysText,
+  calcButton,
+  birthdayList,
+  errorMsg,
+} from "./elements.js";
 import { findLength, getAcronym } from "./functions.js";
 
 window.onload = function () {
@@ -7,11 +12,22 @@ window.onload = function () {
   birthdaysText.value = data;
 
   // convert to JSON
+
   let birthdays = JSON.parse(birthdaysText.value.toString());
 
-  let calc = () => {
+  let calc = (e) => {
+    if (e) {
+      e.preventDefault();
+    }
     let year = document.querySelector("#year").value;
-    birthdays = JSON.parse(birthdaysText.value.toString());
+    try {
+      birthdays = JSON.parse(birthdaysText.value.toString());
+      errorMsg.innerHTML = "";
+    } catch (error) {
+      console.log(error);
+      errorMsg.innerHTML = "Invalid JSON";
+    }
+
     birthdayList.forEach((item) => {
       item.innerHTML = "";
     });

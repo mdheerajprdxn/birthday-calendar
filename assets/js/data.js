@@ -17,8 +17,6 @@ export let data = `[
     "birthday" : "4/12/2000"},
     {"name": "Jamie Lannistor",
     "birthday" : "2/01/1990"},
-   
-   
     {"name": "King Joffery",
     "birthday" : "1/04/1990"}
   ]`;

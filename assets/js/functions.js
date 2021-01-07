@@ -19,9 +19,7 @@ export function findLength() {
     item.classList.remove("empty");
     let liList = item.querySelectorAll("li");
     let length = Object.keys(liList).length;
-    if (length > 6) {
-      giveClassToChildren(liList, "smallest");
-    } else if (length > 4) {
+    if (length > 4) {
       giveClassToChildren(liList, "small");
     } else if (length > 1) {
       giveClassToChildren(liList, "medium");
