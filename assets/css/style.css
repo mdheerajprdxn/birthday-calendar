@@ -24,8 +24,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .calendar .wrapper > ul > li {
@@ -48,9 +46,7 @@ h1 {
 /* Birthday */
 .birthdays {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: 200px;
@@ -91,21 +87,55 @@ h1 {
   z-index: 5;
 }
 
-.big {
+li.big {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: 200px;
+  display: inline-block;
+  width: 100%;
 }
 
-.medium {
+li.medium {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  width: 50%;
   height: 100px;
+  display: inline-block;
 }
 
-.small {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+li.small {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  width: 33.34%;
+  display: inline-block;
   height: 50px;
+}
+
+li.smallest {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  display: inline-block;
+  width: 33.34%;
+  height: 50px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.count {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
 }
 
 .birthdays li:nth-child(1n + 1) {
